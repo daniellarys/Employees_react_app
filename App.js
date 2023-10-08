@@ -5,19 +5,19 @@ import { PageContainer, TabButton, TabContainer } from "../src/components/Styl";
 
 const App = () => {
   const [employees, setEmployees] = useState([]);
-  const [activeTab, setActiveTab] = useState("employees"); // Přidali jsme stavovou proměnnou pro aktivní tab
+  const [activeTab, setActiveTab] = useState("employees"); // Add useState value for active tab
 
-  // Změnit aktivní tab na "employees"
+  // Change active to employees
   const showEmployeesTab = () => {
     setActiveTab("employees");
   };
 
-  // Změnit aktivní tab na "task"
+  // Change ctive tab to task
   const showTaskTab = () => {
     setActiveTab("task");
   };
 
-  // Funkce pro získání počtu mužů a počtu žen ze seznamu zaměstnanců
+  // Function for retrieving numbers of mens and women
   const getGenderCounts = () => {
     const maleCount = employees.filter(
       (employee) => employee.gender === "men"
@@ -28,7 +28,7 @@ const App = () => {
     return { maleCount, femaleCount };
   };
 
-  // Získání počtu mužů a počtu žen
+  // Get count of mens and women
   const { maleCount, femaleCount } = getGenderCounts();
 
   return (
