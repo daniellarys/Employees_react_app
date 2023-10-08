@@ -1,6 +1,6 @@
 # Employee React based app
-Try the app here: [Link](http://elektro-daniel.cz/projects/employees_react/) **
-1. On the List of Employees Tab:**
+Try the app here: [Link](http://elektro-daniel.cz/projects/employees_react/)
+1. On the List of Employees Tab:
 - You can add employees, choose Female/Male, remove employee from the list.
 - If you left name/surname empty - it wont add (error message appears).
 2. On the Task Tab:
