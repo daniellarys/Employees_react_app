@@ -8,14 +8,14 @@ const TaskTab = ({ employees, maleCount, femaleCount }) => {
   const [canPlanTask, setCanPlanTask] = useState(false);
 
   useEffect(() => {
-    //Vsichni za hodinu
+    // Get all employees per hour
     const metersPerHour = employees.reduce(
       (totalMeters, employee) =>
         totalMeters + (employee.gender === "men" ? 1 : 0.5),
       0
     );
 
-    // Kontrola - je dost zamestnancu na splneni ukolu v danem case?
+    // Is there sufficient amount of persons to be job done? :-)
     const totalMeters = metersPerHour * timeLimit;
     setCanPlanTask(
       requiredMeters > 0 && timeLimit > 0 && totalMeters >= requiredMeters
