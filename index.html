@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/projects/employees/favicon.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="/projects/employees/logo192.png" />
+    <link rel="manifest" href="/projects/employees/manifest.json" />
+    <title>React App</title>
+    <style>
+      /* Initial accordion style */
+      .accordion {
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        overflow: hidden;
+      }
+
+      /* Default accordion button style */
+      .accordion-button {
+        background-color: lightblue;
+        color: #333;
+        cursor: pointer;
+        padding: 10px;
+        text-align: left;
+        width: 100%;
+        border: none;
+        outline: none;
+        transition: background-color 0.3s ease-in-out;
+        text-align: center;
+      }
+
+      /* Accordion button - hover style */
+      .accordion-button:hover {
+        background-color: #48abe4;
+      }
+
+      /* Accordion content style - default state is hidden */
+      .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        padding: 0 10px;
+        font-size: 13px;
+        font-family: Verdana, sans-serif;
+      }
+
+      /* Accordion content style - active part */
+      .active {
+        max-height: 200px; /* Content height */
+      }
+      /* for color in Accordion*/
+      .green {
+        color:green;
+        font-weight: bold;
+      }
+      .red {
+        color:red;
+        font-weight: bold;
+      }
+    </style>
+    <script
+      defer="defer"
+      src="/projects/employees/static/js/main.324a1ea3.js"
+    ></script>
+    <script>
+
+</script>
+    <link
+      href="/projects/employees/static/css/main.9f088a99.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Accordion start-->
+    <div class="accordion">
+        <button class="accordion-button">Click this button to <strong>show</strong> description for this project!</button>
+        <div class="accordion-content">
+          <p class="accordion-text">
+            <ul>
+              <strong>On the List of Employees Tab:</strong>
+              <li>You can add employees, choose Female/Male, remove employee from the list.</li>
+              <li>If you left name/surname empty - it wont add (error message appears).</li>
+              <strong>On the Task Tab:</strong>
+              <li>Men can excavate 1 meters/hour, woman only 0.5/hour.</li>
+              <li>If your requirements are met the button below is <span class="green">green</span> and active, if not then <span class="red">red</span> and inactive.</li>
+              Note: All information will be keept until you close your browser window.
+            </ul>
+          </p>
+        </div>
+      </div>
+  <!--Accordion end-->
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script  src="./script.js"></script>
+  </body>
+</html>
