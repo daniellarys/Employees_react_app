@@ -95,7 +95,7 @@ export const TaskForm = styled.div`
   flex-direction: column;
 `;
 
-/* Tohle je nastaveni pro text Planning Excavation works */
+/* Style for planning "excavation works" */
 export const Header = styled.h2`
   margin-top: 20px;
   font-size: 20px;
@@ -103,7 +103,7 @@ export const Header = styled.h2`
   color: #9c6a4f;
 `;
 
-/* Tohle je nastaveni pro udaj o poctu pohlavi */
+/* Setup for text which describing number of mens and women */
 export const Recap = styled.p`
   margin-top: 20px;
   font-size: 15px;
@@ -127,18 +127,18 @@ export const InputRadio = styled.input`
   padding-left: 10px;
   cursor: pointer;
 `;
- /* slouzi pro nastaveni RadioButton Labelu */
+ /* Radiobutton label setup */
 export const Radlabel = styled.label`
   font-weight: bold;
 `;
 
-/* Slouzi pro nastaveni containeru obalujici tlacitka pro prepinani mezi taby */
+/* Set for main Tabs cotainer */
 export const TabContainer = styled.div`
   display: flex;
   width: 450px;
   align-items: center;
 `;
- /* Slouzi pro nastaveni poctu metru a casu */
+ /* Setup for time and meters */
 export const InputTask = styled.input`
   display: grid;
   margin: auto;
@@ -152,7 +152,7 @@ export const InputTask = styled.input`
   justify-content: center;
 `;
 
-/*Slouzi k nastaveni samotneho tlacitka, ktere ukazuje zda prace bude nebo ne */
+/* Setup for color-changing button (depending on the result) */
 export const ButtonWork = styled.button`
   display: grid;
   margin:auto;
@@ -166,7 +166,7 @@ export const ButtonWork = styled.button`
 
 `;
 
-/* Tohle je nastaveni pro udaj o poctu pohlavi */
+/* Setup for describing about number of female/male persons */
 export const RecapTwo = styled.p`
   margin-top: 20px;
   font-size: 20px;
